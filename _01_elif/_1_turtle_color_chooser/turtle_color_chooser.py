@@ -2,7 +2,6 @@ import random
 import turtle
 from tkinter import simpledialog
 
-
 # Returns a random color!
 def get_random_color():
     return "#%06X" % (random.randint(0, 0xFFFFFF))
@@ -24,6 +23,13 @@ if __name__ == '__main__':
     #      6) If the user doesn't enter anything, choose a random color
     #      7) Put a loop around your code so that you keep asking the user for
     #         more colors & drawing them
-
+    bob = turtle.Turtle()
+    bob.shape('turtle')
+    bob.shapesize(10)
+    for i in range(4):
+        bob.forward(100)
+        bob.left(90)
+    bob.width(10)
+    simpledialog.askstring(title="user", prompt="what color turtle would you like?")
     # ===================== DO NOT EDIT THE CODE BELOW ============================
     turtle.done()
