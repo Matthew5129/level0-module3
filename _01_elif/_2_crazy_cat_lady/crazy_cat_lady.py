@@ -18,5 +18,16 @@ if __name__ == '__main__':
     #         play_video function below to show them a cat video
     #      6) If they have 0 cats, show them a video of A Frog Sitting on a
     #         Bench Like a Human
+    window = Tk()
+    window.withdraw()
+    user = simpledialog.askstring(title="user", prompt="How many cats do you have?")
+    if user == "3":
+        messagebox.showinfo(title="user", message="YOU ARE A CRAZY CAT LADY!!!")
+    if user == "2":
+        play_video('https://www.youtube.com/watch?v=GH2sOfDAyt4')
+    if user == "1":
+        play_video('https://www.youtube.com/watch?v=9IIAHmdXNcs')
+    if user == "0":
+        play_video('https://www.youtube.com/watch?v=VLVdjLbXdm4')
 
     pass

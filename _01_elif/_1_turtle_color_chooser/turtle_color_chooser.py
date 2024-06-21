@@ -30,6 +30,29 @@ if __name__ == '__main__':
         bob.forward(100)
         bob.left(90)
     bob.width(10)
-    simpledialog.askstring(title="user", prompt="what color turtle would you like?")
+    user = simpledialog.askstring(title="user", prompt="what color turtle would you like?")
+    if user == 'red':
+        bob.color('red')
+        for i in range(4):
+            bob.forward(100)
+            bob.left(90)
+    if user == 'blue':
+        bob.color('blue')
+        for i in range(4):
+            bob.forward(100)
+            bob.left(90)
+
+
+
+
+
+
+
+
+
+
+
+
+
     # ===================== DO NOT EDIT THE CODE BELOW ============================
     turtle.done()
