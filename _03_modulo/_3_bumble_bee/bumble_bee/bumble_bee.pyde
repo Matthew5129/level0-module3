@@ -9,8 +9,13 @@ def draw():
     
     # First run the program and you should see a flower.  
   
-  
-    # Then, use a loop to make a body for the Bee! 
+      # Then, use a loop to make a body for the Bee! 
+    for i in range(16):
+        fill('#FEFF03')
+        s = 30
+        ellipse(30, 30, s, s)
+        
+        
     # (see the image on the recipe, it's a diagonal line of circles)
     # Use modulo to make the colors alternate between yellow and black
     
