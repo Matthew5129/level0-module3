@@ -10,12 +10,14 @@ def draw():
     # First run the program and you should see a flower.  
   
       # Then, use a loop to make a body for the Bee! 
-    for i in range(16):
-        fill('#FEFF03')
-        s = 30
-        ellipse(30, 30, s, s)
-        
-        
+    for i in range(34):
+        if i % 2 == 0:
+            fill('#FEFF03')
+        if i % 2 == 1:
+            fill('#000000')
+        s = i*14
+        ellipse(s, s, 40, 40)
+    
     # (see the image on the recipe, it's a diagonal line of circles)
     # Use modulo to make the colors alternate between yellow and black
     
@@ -23,7 +25,7 @@ def draw():
 
 
     # Now put his head on using draw_bee_face(x,y)
-    
+    draw_bee_face(50, 50)
 
     pass
 
